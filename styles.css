@@ -47,13 +47,74 @@ footer{
 }
 
 .papersheet{
-    display:grid;
-    grid-template-columns: auto;
-    justify-content: center;
     margin: 5px;
+    padding: 20px 10px 20px 10px;
     height: 95%;
     width: 45%;
     background-image: url(images/seamless_paper_texture.png);
     background-size: auto;
-    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.50);
 }
+.papersheetgrid{
+    height: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 1.5fr 1fr 1fr; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+      "namearea traitsarea traitsarea"
+      "statsandskillsarea contactarea aboutarea"
+      "statsandskillsarea toolsarea portfolioarea"
+      "profarea toolsarea portfolioarea"; 
+    
+}
+
+.contentbox{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+
+.namearea { grid-area: namearea; }
+.contactarea { grid-area: contactarea; }
+
+#message{
+    resize: none;
+}
+.traitsarea {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". ."
+      ". ."; 
+    grid-area: traitsarea; 
+  }
+.statsandskillsarea {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "statsarea skillsarea"
+      "statsarea skillsarea"
+      "statsarea skillsarea"
+      "statsarea skillsarea"
+      "statsarea skillsarea"
+      "statsarea skillsarea"; 
+    grid-area: statsandskillsarea; 
+  }
+
+.skillsarea { grid-area: skillsarea; }
+.statsarea { 
+    grid-area: statsarea; 
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profarea { grid-area: profarea; }
+.aboutarea { grid-area: aboutarea; }
+.toolsarea { grid-area: toolsarea; }
+.portfolioarea { grid-area: portfolioarea; }

@@ -13,13 +13,24 @@
         <header id="header">Header</header>
         <main class="main">
             <div class="papersheet">
-                <div class= "topstats">
-                    <div class= "namearea">
+                <div class="papersheetgrid">
+                    <div class="namearea">
                         <h3 class = "titletext">Character Sheet</h3>
                         <h1 class = "herotext ">Ben Rose</h1>
                         <h5 class = "descriptiontext">Character Name</h5>
+                    </div>  
+                    <div class="contactarea contentbox">
+                        <h4 class ="areatitle">Contact me</h4>
+                        <form action="test" method="post">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+                            <label for="message">Message:</label>
+                            <textarea id="message"></textarea>
+                            <button type="submit">Submit</button>
                     </div>
-                    <div class = "traitsarea">
+                    <div class="traitsarea">
                         <div class = "traitbox">
                             <div class= "trait">
                                 Web Developer
@@ -30,28 +41,53 @@
                         </div>
                         <div class = "traitbox">
                             <div class= "trait">
-                                1 Year
+                                Web Developer
                             </div>
                             <div class= "traittext">
-                                Experience
+                                Class
                             </div>
                         </div>
                         <div class = "traitbox">
                             <div class= "trait">
-                                Race
+                                Web Developer
                             </div>
                             <div class= "traittext">
-                                Human
+                                Class
                             </div>
                         </div>
                         <div class = "traitbox">
                             <div class= "trait">
-                                Background
+                                Web Developer
                             </div>
                             <div class= "traittext">
-                                Education
+                                Class
                             </div>
+                        </div>                        
+                    </div>
+                    <div class="statsandskillsarea">
+                        <div class="skillsarea contentbox">
+                            Skills
                         </div>
+                        <div class="statsarea">
+                            <div class="charstat">Strength</div>
+                            <div class="charstat">Dexterity</div>
+                            <div class="charstat">Constitution</div>
+                            <div class="charstat">Intelligence</div>
+                            <div class="charstat">Wisdom</div>
+                            <div class="charstat">Charisma</div>
+                        </div>
+                    </div>
+                    <div class="profarea contentbox">
+                        Proficiencies
+                    </div>
+                    <div class="aboutarea">
+                        About
+                    </div>
+                    <div class="toolsarea contentbox">
+                        Tools and Toys
+                    </div>
+                    <div class="portfolioarea contentbox">
+                        Portfolio
                     </div>
                 </div>
             </div>
